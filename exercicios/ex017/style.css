@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    /*
+    Medidas absolutas:
+    cm, mm, in, px, pt, pc
+
+    Medidas relativas:
+    em, ex, rem, vw, vh, %
+
+    SEMPRE USAR PX E EM
+    */
+    font-size: 16px; /* Tamanho natural na internet*/
+    /*font-weight: ;*/
+    /* lighter, normal, bold, bolder*/
+    /* Também tem a opção por número, de 100 a 900*/
+    /*font-style: italic;*/
+    /*Sublinhado - text-decoration: underline;*/
+    /* SHORTHAND: Usar uma única linha para as fontes*/
+}
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
