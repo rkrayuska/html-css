@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em; /*É o padrão*/
 }
 
 html, body{
     min-height: 100vh; /*Altura mínima do corpo do site 100vh ou 100%*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -17,6 +29,8 @@ header{
 }
 
 header > h1{
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10% da largura do vw, largura da tela - Não é a melhor maneira, mas é um recurso*/
     padding-top: 50px; /*Espaço do cabeçalho com o início da tela, saindo de h1*/
     /*text-transform: uppercase; - Deixa as letras maiusculas*/
     font-variant: small-caps; /*Deixa as letras maiusculas de uma forma mais bonita*/
@@ -37,6 +51,8 @@ header a:hover, footer a:hover{
 }
 
 section{
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     /*Colocando espaço para cima e para baixo no bloco section, esse bloco se adapta ao tamanho da tela*/
@@ -55,8 +71,10 @@ section.imagem{
 }
 
 section.imagem > p{ /*Parágrafo que tem dentro da classe imagem*/
-    width: 400px; /*Deixa o bloco menor*/
+    display: inline-block; /*Caixa que se adapta ao tamanho do conteúdo*/
+     /*width: 400px; - Deixa o bloco menor*/
     background-color: rgba(0, 0, 0, 0.466);
+    padding: 5px; /*Para não encostar no bloco*/
 }
 
 footer{
