@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*Altura mínima do corpo do site 100vh ou 100%*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center; /*Deixa todo o texto no centro*/
+}
+
+header > h1{
+    padding-top: 50px; /*Espaço do cabeçalho com o início da tela, saindo de h1*/
+    /*text-transform: uppercase; - Deixa as letras maiusculas*/
+    font-variant: small-caps; /*Deixa as letras maiusculas de uma forma mais bonita*/
+}
+
+header > p{
+    padding-bottom: 50px; /*Espaço do cabeçalho para o resto das informações, saindo de p*/
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none; /* Tira o sublinhado dos links*/
+    font-weight: bolder; /*Link vai ficar em negrito*/
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline; /*Quando passar o mouse no link vai ficar sublinhado*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*Colocando espaço para cima e para baixo no bloco section, esse bloco se adapta ao tamanho da tela*/
+    line-height: 2em; /*Espaçamento entre as frases que estão dentro de section - facilita a leitura*/
+    padding-left: 30px; /*Afastando as frases das sections da borda do site*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+}
+
+section.imagem > p{ /*Parágrafo que tem dentro da classe imagem*/
+    width: 400px; /*Deixa o bloco menor*/
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+footer{
+    background-color: black;
+    text-align: center; /*Alinhamento dos textos do footer no centro*/
+    color: white;
+    padding: 10px;
+}
