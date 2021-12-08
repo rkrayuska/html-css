@@ -60,6 +60,10 @@ section{
     padding-left: 30px; /*Afastando as frases das sections da borda do site*/
 }
 
+section > p{
+    padding-bottom: 2em; /*Espaço abaixo do paragrafo da section para a septilha ficar mais bonita.*/
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -68,13 +72,26 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.226);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.644); /*Inset -> Para dentro, 13px é de espalhamento e 0px de ampliação*/
+    background-size: cover; /*Podia colocar tanto no section#img01 e no 02, mas para o código ficar mais limpo, é melhor deixar só aqui*/
+    background-attachment: fixed; /*Vai deixar a imagem fixa na tela*/
 }
 
 section.imagem > p{ /*Parágrafo que tem dentro da classe imagem*/
     display: inline-block; /*Caixa que se adapta ao tamanho do conteúdo*/
      /*width: 400px; - Deixa o bloco menor*/
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.397);
     padding: 5px; /*Para não encostar no bloco*/
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
 }
 
 footer{
